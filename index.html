@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>BugsJS: A Benchmark of JavaScript Bugs</title>
+
+      <meta property="og:title" content="BugsJS" />
+      <meta property="og:locale" content="en_US" />
+      <link rel="canonical" href="https://bugsjs.github.io/" />
+      <meta property="og:url" content="https://bugsjs.github.io/" />
+      <meta property="og:site_name" content="BugsJS" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/style.css">  
+
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2 col-12">
+                     <a href="index.html"><img class="logo" src="img/logo.png"></a>
+                     <p class="nav-text">Menu</p>
+                  </div>
+                  <div class="top-nav col-md-10 col-12">
+                     <ul>
+                           <li><a href="#nav-home" class="home">Home</a></li>
+                           <li><a href="#nav-about" class="about">About</a></li>
+                           <li><a href="#nav-download" class="download">Download</a></li>
+                           <li><a href="#nav-faq" class="faq">FAQ</a></li>
+                           <!--li><a href="#home" class="publications">Publications</a></li-->
+                           <li><a href="#nav-contact" class="contact">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="container">
+         <div id="home" class="row content-div">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/background_home_rabbithole2.png" alt="First slide">
+      <div class="carousel-caption">
+       <h5>Welcome to BugsJS website!</h5>
+       <p class="d-none d-lg-block">
+        <b>BugsJS</b> is a benchmark of <b>453 real JavaScript bugs</b>. 
+        Collected from <b>10</b> popular <b>server-side</b> JavaScript <b>programs</b> and <b>manually validated</b>.
+       </p>
+     </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/background_home_buginvest.png"" alt="Second slide">
+      <div class="carousel-caption">
+       <h5>Detailed bugs</h5>
+       <p class="d-none d-lg-block">
+        Each bug comes with its <b>bug report</b>, the <b>cleaned patches</b> of the bug fix 
+        and the necessary <b>commands</b> to <b>execute</b> the <b>test cases</b> and to <b>calculate test coverage</b>.
+      </p>
+     </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/download_computer.png"" alt="Third slide">
+      <div class="carousel-caption">
+       <h5>Rich interface</h5>
+       <p class="d-none d-lg-block">
+        BUGSJS features a <b>rich interface</b> that
+        facilitates conducting <b>highly-reproducible</b> empirical studies and
+        <b>comparisons</b> of JavaScript <b>analysis and testing tools</b>.
+      </p>
+     </div>
+    </div>
+  </div>
+</div>
+            <section class="content col-12">
+                 <h3>News</h3>
+<br>
+
+
+                 <h4>BugsJS Poster</h4>
+                 <p>
+                  There will be a poster show-casing BugsJS on the ICST19 Poster Track. If you are interested, check it out!
+                  <br/>
+                  <a href="paper/ICST19poster.pdf">[Poster]</a>
+                 </p>
+                  <br/>
+
+
+                 <h4>BugsJS at ICST19!</h4>
+                 <p>
+                  BugsJS is going to be presented at the ICST19 conference. Come and meet us!
+                  <br/>
+                  <br/>
+                  <img src="img/icst.png" alt="icst19" style="max-width: 100%"/>
+                 </p>
+
+
+                        
+
+            </section>
+         </div>
+
+
+         <div id="about" class="row content-div">
+            <div class="header-img">
+               <img src="img/bug_collection.png" alt=""/>
+            </div>
+            <section class="content col-12">
+               <h3>About BugsJS</h3>
+<p>
+BugsJS is a JavaScript bug dataset which includes 453 reproducible bugs from 10 popular, mature and active Node.js server-side JavaScript programs from GitHub that adopt the Mocha testing framework.
+</p>
+
+<p>
+The bugs have been validated and cleaned to ensure that the bugs and their fixes were relevant, isolated, and reproducible.
+<ul>
+<li>relevance: the bug-fixing commits are actually fixing the bug described in the issue, rather than, for example, implementing a new feature.</li>
+<li>isolation: the bug-fixing code exclusively aim at fixing the bug, and no other changes (e.g., refactorings) are interleaved within it. Isolation is particularly important in domains where bug-fixing changes should be clearly identifiable, hence must be cleaned (e.g., training machine learning models to learn the fixes from source code to devise automated program repair techniques). </li>
+<li>reproducibility: we have manually extracted the test cases that demonstrate each bug. Each set of such tests was executed on the buggy revision (i.e., dynamic validation) to ensure their relevance to the bug, and can be leveraged, for instance, to devise novel automated test generation techniques.</li><br/>
+</ul>
+</p>
+
+<p>
+<img src="img/architecture.svg" alt="architecture" title="architecture" style="display:block;margin:0 auto"/>
+</p>
+
+<h4>Framework</h4>
+<p>
+BugsJS consists of two other components: a Docker image that provides a runtime environment, and a bug dataset. The dataset can be queried through an API that supports the following commands: 
+<ul>
+<li>info : printing out information about a given bug</li>
+<li>checkout : checking-out the source code </li>
+<li>test : running all tests and retrieving the overall test suite coverage</li>
+<li>per-test : running each test individually and retrieving the per-test coverage</li>
+</ul>
+</p>
+<p>
+These commands facilitate the use of BugsJS for other researchers to a large extent<br>
+GitHub’s fork functionality was use to make a full copy of the git history of the subject systems. The fork is a separate git repository; therefore, we can push commits to it. Taking advantage of this possibility, we have extended the repositories with additional commits, to separate the bug-fixing commits and their corresponding tests. To make such commits easily identifiable, we tagged them using the following notation ( X denotes a sequential bug identifier):
+<ul>
+<li>Bug-X : The parent commit of the revision in which the bug was fixed (i.e., the buggy revision)</li>
+<li>Bug-X-original: A revision with the original bug-fixing changes (including the production code and the newly added tests)</li>
+<li>Bug-X-test: A revision containing only the tests introduced in the bug-fixing commit, applied to the buggy revision</li>
+<li>Bug-X-fix: A revision containing only the production code changes introduced to fix the bug, applied to the buggy revision</li>
+<li>Bug-X-full: A revision containing both the cleaned fix and the newly added tests, applied to the buggy revision</li>
+</ul>
+</p>
+
+<h4>Subjects</h4>
+<p>
+To select appropriate subject systems to include in BugsJS, we focused on popular and trending JavaScript projects on GitHub.
+Popularity was measured using the projects’ Stargazers count (i.e., the number of stars owned by the subject’s GitHub repository). Server-side Node.js applications were selected which are popular (Stargazers count ≥ 100) and mature (number of commits > 200), and have been actively maintained (year of the latest commit ≥ 2017).
+Particularly, only projects have been selected in which bug reports had a dedicated issue label on GitHub’s Issues page, which allows filtering irrelevant issues (pertaining to, e.g., feature requests, build problems, or documentation tasks), so that only actual bugs are included.
+<table class="subject-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>kLOC</th>
+      <th>Stars</th>
+      <th>Commits</th>
+      <th>Forks</th>
+      <th>Bugs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bower</td>
+      <td>16</td>
+      <td>15,290</td>
+      <td>2,706</td>
+      <td>1,995</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ESLint</td>
+      <td>240</td>
+      <td>12,434</td>
+      <td>6,615</td>
+      <td>2,141</td>
+      <td>333</td>
+    </tr>
+    <tr>
+      <td>Express</td>
+      <td>11</td>
+      <td>40,407</td>
+      <td>5,500</td>
+      <td>7,055</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>Hessian.js</td>
+      <td>6</td>
+      <td>104</td>
+      <td>217</td>
+      <td>23</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Hexo</td>
+      <td>17</td>
+      <td>23,748</td>
+      <td>2,545</td>
+      <td>3,277</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Karma</td>
+      <td>12</td>
+      <td>10,210</td>
+      <td>2,485</td>
+      <td>1,531</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Mongoose</td>
+      <td>65</td>
+      <td>17,036</td>
+      <td>9,770</td>
+      <td>2,457</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Node-redis</td>
+      <td>11</td>
+      <td>10,349</td>
+      <td>1,242</td>
+      <td>1,245</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Pencilblue</td>
+      <td>46</td>
+      <td>1,596</td>
+      <td>3,675</td>
+      <td>276</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Shield</td>
+      <td>20</td>
+      <td>6,319</td>
+      <td>2,036</td>
+      <td>1,432</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>444</td>
+      <td>137,493</td>
+      <td>36,791</td>
+      <td>21,432</td>
+      <td>453</td>
+    </tr>
+  </tfoot>
+</table>
+</p>
+
+            </section>
+         </div>
+
+
+         <div id="download" class="row content-div">
+            <div class="header-img">
+               <img src="img/background_home_server_rack.png" alt=""/>
+            </div>
+            <section class="content col-12">
+               <h3>Download</h3>
+               <br>
+
+               <h4>BugsJS</h4>
+               <a href="https://github.com/BugsJS/bug-dataset">[BugsJS dataset]</a><br>
+               <a href="https://github.com/BugsJS/docker-environment">[BugsJS environment]</a><br>
+<br><br>
+               <h4>Paper</h4>
+               <h5>BugsJS: A Benchmark of JavaScript Bugs</h5>
+
+               <p>Péter Gyimesi, Béla Vancsics, Andrea Stocco, Davood Mazinanian, Árpád Beszédes, Rudolf Ferenc and Ali Mesbah</p>
+               <br>
+               <p>JavaScript is a popular programming language that is also error-prone due to its asynchronous, dynamic, and loosely-typed nature. In recent years, numerous techniques have been proposed for analyzing and testing JavaScript applications. However, our survey of the literature in this area revealed that the proposed techniques are often evaluated on different datasets of programs and bugs. The lack of a commonly used benchmark limits the ability to perform fair and unbiased comparisons for assessing the efficacy of new techniques. To fill this gap, we propose BugsJS, a benchmark of 453 real, manually validated JavaScript bugs from 10 popular JavaScript server-side programs, comprising 444k LOC in total. Each bug is accompanied by its bug report, the test cases that detect it, as well as the patch that fixes it. BugsJS features a rich interface for accessing the faulty and fixed versions of the programs and executing the corresponding test cases, which facilitates conducting highly-reproducible empirical studies and comparisons of JavaScript analysis and testing tools.</p>
+               <a href="paper/ICST19.pdf">[Preprint version]</a>
+<br><br>
+               <h4>Poster paper</h4>
+               <h5>Poster: Supporting JavaScript Experimentationwith BugsJS</h5>
+
+               <p>Béla Vancsics, Péter Gyimesi, Andrea Stocco, Davood Mazinanian, Árpád Beszédes, Rudolf Ferenc and Ali Mesbah</p>
+               <br>
+               <p>In our recent work, we proposed BugsJS, a benchmark of several hundred bugs from popular JavaScript server-side programs.
+In this abstract paper, we report the results of our initial evaluation in adopting BugsJS to support an experiment in fault localization.
+First, we describe how BugsJS facilitated accessing the information required to perform the experiment, namely, test case code, their outcomes, their associated code coverage and related bug information. Second, we illustrate how BugsJS can be improved to further enable easier application to fault localization research, for instance, by filtering out failing test cases that do not directly contribute to a bug.
+
+We hope that our preliminary results will foster researchers in using BugsJS to enable highly-reproducible empirical studies and comparisons of JavaScript analysis and testing tools.</p>
+               <a href="paper/ICST19posterpaper.pdf">[Preprint version]</a>
+               <a href="paper/ICST19poster.pdf">[Poster]</a>
+
+            </section>
+         </div>
+
+
+         <div id="faq" class="row content-div">
+            <div class="header-img">
+               <img src="img/faq_speech.png" alt=""/>
+            </div>
+            <section class="content col-12">
+              <h3>How to contribute?</h3>
+                <p>
+                  If you have a feature request, open an Issue ticket on the <a href="https://github.com/BugsJS/bug-dataset">[GitHub repository]</a>
+                </p>
+                <p>
+                  If you would like to add another project to the benchmark, submit a pull request with the necessary CSV files and contact us, so we can fork the repository under the BugsJS Organization.
+                </p>
+                <p>
+                  If you would like to add new bugs to the benchmark, submit a pull request with the modified CSV files and contact us, so we can add the extra commits and tags to the fork.
+                </p><br>
+
+               <h3>How to cite?</h3>
+               <p>Péter Gyimesi, Béla Vancsics, Andrea Stocco, Davood Mazinanian, Árpád Beszédes, Rudolf Ferenc and Ali Mesbah. 2019. BugsJS: A Benchmark of JavaScript Bugs. In Proceedings of 12th IEEE International Conference on Software Testing, Verification and Validation (ICST).</p>
+               <p>
+@inproceedings{2019-Gyimesi-ICST,<br>
+author = {P\'{e}ter Gyimesi and B\'{e}la Vancsics and Andrea Stocco and Davood Mazinanian and \'{A}rp\'{a}d Besz\'{e}des and Rudolf Ferenc and Ali Mesbah},<br>
+title = {{BugJS}: A Benchmark of JavaScript Bugs},<br>
+booktitle = {Proceedings of 12th IEEE International Conference on Software Testing, Verification and Validation (ICST)},<br>
+year = {2019},<br>
+}
+</p><br>
+
+               
+            </section>
+         </div>
+
+         <!--div id="publications" class="row content-div">
+            <div class="header-img">
+               <img src="img/bug_collection.png" alt=""/>
+            </div>
+            <section class="content col-12">
+               <h3>Publications</h3>
+               Ha majd hivatkoznak rá akkor ide lehet gyűjteni.. (Amíg üres addig elrejthető)
+            </section>
+         </div-->
+
+         <div id="contact" class="row content-div">
+            <div class="header-img">
+               <img src="img/background_home_office1.png" alt=""/>
+            </div>
+            <section class="content col-12">
+               <h3>Contact</h3>
+
+If you have any questions, don't hesitate to contact us:<br/>
+<b>Péter Gyimesi</b><br/>
+E-mail: <b>pgyimesi</b> [at] <b>inf.u-szeged.hu</b><br/><br/>
+<div class="contact-wrapper">
+  <img class="uni-logo" src="img/szte-logo.png"/>
+</div>
+<div class="contact-wrapper">
+  <img class="uni-logo" src="img/ubc-logo.png"/>
+</div>
+<div class="clearfix"></div>
+            </section>
+         </div>
+      </main>
+      <footer>
+         Design by <a href="http://kreanod.hu/brita" rel="nofollow">Rita Bártfai</a> | BugsJS Copyright 2019 | <a href="https://github.com/BugsJS">https://github.com/BugsJS</a>
+      </footer>
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="js/navigation.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133195907-1"></script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-133195907-1');
+</script>
+
+   </body>
+</html>
