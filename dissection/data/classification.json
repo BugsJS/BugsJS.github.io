@@ -1,0 +1,308 @@
+{
+	"Taxonomy": {
+		"Generic": {
+			"G-DP": {
+				"name": "Data Processing",
+				"fullname": "Generic \u2192 Data Processing"
+			},
+			"G-T": {
+				"name": "Typo",
+				"fullname": "Generic \u2192 Typo"
+			},
+			"G-TC": {
+				"name": "Type Conversion",
+				"fullname": "Generic \u2192 Type Conversion"
+			},
+			"G-L-IncorLS": {
+				"name": "Loop \u2192 Incorrect Loop Statement",
+				"fullname": "Generic \u2192 Loop \u2192 Incorrect Loop Statement"
+			},
+			"G-RS-MRS": {
+				"name": "Return Statement \u2192 Missing Return Statement",
+				"fullname": "Generic \u2192 Return Statement \u2192 Missing Return Statement"
+			},
+			"G-RS-WRS": {
+				"name": "Return Statement \u2192 Wrong Return Statement",
+				"fullname": "Generic \u2192 Return Statement \u2192 Wrong Return Statement"
+			},
+			"G-VI-Incor-VI": {
+				"name": "Variable Initialization \u2192 Incorrect Variable Initialization",
+				"fullname": "Generic \u2192 Variable Initialization \u2192 Incorrect Variable Initialization"
+			},
+			"G-VI-MI": {
+				"name": "Variable Initialization \u2192 Missing Initialization",
+				"fullname": "Generic \u2192 Variable Initialization \u2192 Missing Initialization"
+			},
+			"G-VI-MVI": {
+				"name": "Variable Initialization \u2192 Missing Variable Initialization",
+				"fullname": "Generic \u2192 Variable Initialization \u2192 Missing Variable Initialization"
+			}
+		},
+		"Incomplete Feature Implementation": {
+			"IncompFI-CP": {
+				"name": "Configuration Processing",
+				"fullname": "Incomplete Feature Implementation \u2192 Configuration Processing"
+			},
+			"IncompFI-CP-MTC": {
+				"name": "Configuration Processing \u2192 Missing Type Checking",
+				"fullname": "Incomplete Feature Implementation \u2192 Configuration Processing \u2192 Missing Type Checking"
+			},
+			"IncompFI-EH": {
+				"name": "Error Handling",
+				"fullname": "Incomplete Feature Implementation \u2192 Error Handling"
+			},
+			"IncompFI-EH-C": {
+				"name": "Error Handling \u2192 Callbacks",
+				"fullname": "Incomplete Feature Implementation \u2192 Error Handling \u2192 Callbacks"
+			},
+			"IncompFI-IncompCP": {
+				"name": "Incomplete Configuration Processing",
+				"fullname": "Incomplete Feature Implementation \u2192 Incomplete Configuration Processing"
+			},
+			"IncompFI-IncompDP": {
+				"name": "Incomplete Data Processing",
+				"fullname": "Incomplete Feature Implementation \u2192 Incomplete Data Processing"
+			},
+			"IncompFI-IncompDP-IncompI": {
+				"name": "Incomplete Data Processing \u2192 Incomplete Initialization",
+				"fullname": "Incomplete Feature Implementation \u2192 Incomplete Data Processing \u2192 Incomplete Initialization"
+			},
+			"IncompFI-IncompOM": {
+				"name": "Incomplete Output Message",
+				"fullname": "Incomplete Feature Implementation \u2192 Incomplete Output Message"
+			},
+			"IncompFI-MDP": {
+				"name": "Missing Data Processing",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Data Processing"
+			},
+			"IncompFI-MIV": {
+				"name": "Missing Input Validation",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Input Validation"
+			},
+			"IncompFI-MIV-EIP": {
+				"name": "Missing Input Validation \u2192 Empty Input Parameters",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Input Validation \u2192 Empty Input Parameters"
+			},
+			"IncompFI-MIV-MHS": {
+				"name": "Missing Input Validation \u2192 Missing Handling of Spaces",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Input Validation \u2192 Missing Handling of Spaces"
+			},
+			"IncompFI-MIV-MHSC": {
+				"name": "Missing Input Validation \u2192 Missing Handling of Special Characters",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Input Validation \u2192 Missing Handling of Special Characters"
+			},
+			"IncompFI-MIV-MNC": {
+				"name": "Missing Input Validation \u2192 Missing Null Check",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Input Validation \u2192 Missing Null Check"
+			},
+			"IncompFI-MIV-MTC": {
+				"name": "Missing Input Validation \u2192 Missing Type Check",
+				"fullname": "Incomplete Feature Implementation \u2192 Missing Input Validation \u2192 Missing Type Check"
+			}	
+		},
+		"Incorrect Feature Implementation": {
+			"IncorFI-CP": {
+				"name": "Configuration Processing",
+				"fullname": "Incorrect Feature Implementation \u2192 Configuration Processing"
+			},
+			"IncorFI-IncorCP": {
+				"name": "Incorrect Configuration Processing",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Configuration Processing"
+			},
+			"IncorFI-IncorDP": {
+				"name": "Incorrect Data Processing",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Data Processing"
+			},
+			"IncorFI-IncorDP-IncorI": {
+				"name": "Incorrect Data Processing \u2192 Incorrect Initialization",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Data Processing \u2192 Incorrect Initialization"
+			},
+			"IncorFI-IncorDP-IncorTC": {
+				"name": "Incorrect Data Processing \u2192 Incorrect Type Comparison",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Data Processing \u2192 Incorrect Type Comparison"
+			},
+			"IncorFI-IncorFP": {
+				"name": "Incorrect Filepath",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Filepath"
+			},
+			"IncorFI-IncorHRE": {
+				"name": "Incorrect Handling of Regex Expression",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Handling of Regex Expression"
+			},
+			"IncorFI-IncorIV": {
+				"name": "Incorrect Input Validation",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Input Validation"
+			},
+			"IncorFI-IncorIV-EIP": {
+				"name": "Incorrect Input Validation \u2192 Empty Input Parameters",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Input Validation \u2192 Empty Input Parameters"
+			},
+			"IncorFI-IncorIV-IncorHSC": {
+				"name": "Incorrect Input Validation \u2192 Incorrect Handling of Special Characters",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Input Validation \u2192 Incorrect Handling of Special Characters"
+			},
+			"IncorFI-IncorIV-UTC": {
+				"name": "Incorrect Input Validation \u2192 Unnecessary Type Check",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Input Validation \u2192 Unnecessary Type Check"
+			},
+			"IncorFI-IncorO": {
+				"name": "Incorrect Output",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Output"
+			},
+			"IncorFI-IncorO-IncorOM": {
+				"name": "Incorrect Output \u2192 Incorrect Output Message",
+				"fullname": "Incorrect Feature Implementation \u2192 Incorrect Output \u2192 Incorrect Output Message"
+			},
+			"IncorFI-P": {
+				"name": "Performance",
+				"fullname": "Incorrect Feature Implementation \u2192 Performance"
+			}
+		},
+		"Perfective Maintenance":{
+			"PM": {
+				"name": "Perfective Maintenance",
+				"fullname": "Perfective Maintenance"
+			}		
+		}
+	},
+	"Bug-fixing types": {
+		"If-related": {
+			"IF-APC": {
+				"name": "Addition of Precondition Check",
+				"fullname": "Addition of Precondition Check"
+			},
+			"IF-APCJ": {
+				"name": "Addition of Precondition Check with Jump",
+				"fullname": "Addition of Precondition Check with Jump"
+			},
+			"IF-APTC": {
+				"name": "Addition of Post-condition Check",
+				"fullname": "Addition of Post-condition Check"
+			},
+			"IF-RMV": {
+				"name": "Removal of an If Predicate",
+				"fullname": "Removal of an If Predicate"
+			},
+			"IF-ABR": {
+				"name": "Addition of an Else Branch",
+				"fullname": "Addition of an Else Branch"
+			},
+			"IF-RBR": {
+				"name": "Removal of an Else Branch",
+				"fullname": "Removal of an Else Branch"
+			},
+			"IF-CC": {
+				"name": "Change of If Condition Expression",
+				"fullname": "Change of If Condition Expression"
+			}
+		},
+		"Method Call": {
+			"MC-DNP": {
+				"name": "Method Call with Different Parameters",
+				"fullname": "Method Call with Different Number of Parameters or Different Types of Parameters"
+			},
+			"MC-DAP": {
+				"name": "Method Call with Different Actual Parameter Values",
+				"fullname": "Method Call with Different Actual Parameter Values"
+			},
+			"MC-DM": {
+				"name": "Change of Method Call to a Class Instance",
+				"fullname": "Change of Method Call to a Class Instance"
+			}
+		},
+		"Sequence": {
+			"SQ-AMO": {
+				"name": "Addition of Operations in an Operation Sequence of Method Calls to an Objec",
+				"fullname": "Addition of Operations in an Operation Sequence of Method Calls to an Objec"
+			},
+			"SQ-RMO": {
+				"name": "Removal of Operations from an Operation Sequence of Method Calls to an Object",
+				"fullname": "Removal of Operations from an Operation Sequence of Method Calls to an Object"
+			},
+			"SQ-AFO": {
+				"name": "Addition of Operations in a Field Setting Sequence",
+				"fullname": "Addition of Operations in a Field Setting Sequence"
+			},
+			"SQ-RFO": {
+				"name": "Removal of Operations from a Field Setting Sequence",
+				"fullname": "Removal of Operations from a Field Setting Sequence"
+			},
+			"SQ-AROB": {
+				"name": "Addition or Removal of Method Calls in a Short Construct Body",
+				"fullname": "Addition or Removal of Method Calls in a Short Construct Body"
+			}
+		},
+		"Loop": {
+			"LP-CC": {
+				"name": "Change of Loop Predicate",
+				"fullname": "Change of Loop Predicate"
+			},
+			"LP-CE": {
+				"name": "Change of the Expression that Modifies the Loop Variable",
+				"fullname": "Change of the Expression that Modifies the Loop Variable"
+			}
+		},
+		"Assignment": {
+			"AS-CE": {
+				"name": "Change of Assignment Expression",
+				"fullname": "Change of Assignment Expression"
+			}
+		},
+		"Switch": {
+			"SW-ARSB": {
+				"name": "Addition/Removal of Switch Branch",
+				"fullname": "Addition/Removal of Switch Branch"
+			}
+		},
+		"Try": {
+			"TY-ARTC": {
+				"name": "Addition/Removal of Try Statement",
+				"fullname": "Addition/Removal of Try Statement"
+			},
+			"TY-ARCB": {
+				"name": "Addition/Removal of a Catch Block",
+				"fullname": "Addition/Removal of a Catch Block"
+			}
+		},
+		"Method Declaration": {
+			"MD-CHG": {
+				"name": "Change of Method Declaration",
+				"fullname": "Change of Method Declaration"
+			},
+			"MD-ADD": {
+				"name": "Addition of a Method Declaration",
+				"fullname": "Addition of a Method Declaration"
+			},
+			"MD-RMV": {
+				"name": "Removal of a Method Declaration",
+				"fullname": "Removal of a Method Declaration"
+			}
+		},
+		"Class Field": {
+			"CF-ADD": {
+				"name": "Addition of a Class Field",
+				"fullname": "Addition of a Class Field"
+			},
+			"CF-RMV": {
+				"name": "Removal of a Class Field",
+				"fullname": "Removal of a Class Field"
+			},
+			"CF-CHG": {
+				"name": "Change of Class Field Declaration",
+				"fullname": "Change of Class Field Declaration"
+			}
+		},
+		"Return": {
+			"Return": {
+				"name": "Changing a return statement",
+				"fullname": "Changing a return statement"
+			}
+		},
+		"Declare": {
+			"Declare": {
+				"name": "Declaring an existing variable",
+				"fullname": "Declaring an existing variable"
+			}
+		}
+	}
+}
